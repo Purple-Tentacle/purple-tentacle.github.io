@@ -14,7 +14,7 @@ Ich als Benutzer solcher mit TLS abgesicherten Seiten habe einige Vorteile. Der 
 ## Beispiel
 Wie wird das gelöst? Na logisch, mit Zertifikaten. Hier mal ein Ausschnitt des LinkedIn Zertifikats.
 
-![zertifikat](./zertifikat.png)
+![zertifikat](/assets/images/zertifikat.png)
 
 Dort ist erst einmal beschrieben, wofür das Zertifikat verwendet werden darf, nämlich zum Identitätsnachweis. Das Zertifikat ist sozusagen der Personalausweis der LinkedIn Seite.
 
