@@ -14,7 +14,7 @@ Ich als Benutzer solcher mit TLS abgesicherten Seiten habe einige Vorteile. Der 
 ## Beispiel
 Wie wird das gelöst? Na logisch, mit Zertifikaten. Hier mal ein Ausschnitt des LinkedIn Zertifikats.
 
-![zertifikat](/assets/images/zertifikat.png)
+![zertifikat](/assets/images/2023-11-21/zertifikat.png)
 
 Dort ist erst einmal beschrieben, wofür das Zertifikat verwendet werden darf, nämlich zum Identitätsnachweis. Das Zertifikat ist sozusagen der Personalausweis der LinkedIn Seite.
 
@@ -25,18 +25,18 @@ Klingt doch erst einmal alles super und logisch. Bis man mal näher drüber nach
 ## Herausgeber
 Auch bei Zertifikaten gibt es einen Herausgeber, er ist ja oben im Screenshot schon aufgelistet (DigiCert). Es gibt sogar eine genaue Aufschlüsselung.
 
-![herausgeber](herausgeber.png)
+![herausgeber](/assets/images/2023-11-21/herausgeber.png)
 
 Es gibt also einen kleinen Pfad von Herausgebern. Ganz oben steht DigiCert. Das ist die Wurzel des Pfades (Fachbegriff Root Certification Authority). Auch diese hat wieder ein Zertifikat, schauen wir uns das mal genauer an.
 
-![herausgeber2](herausgeber2.png)
+![herausgeber2](/assets/images/2023-11-21/herausgeber2.png)
 
 Neben einer viel umfangreicheren Liste an Zwecken und einer viel längeren Laufzeit fällt vor allem eines auf. Das Zertifikat wurde von “DigiCert Global Root CA” an “DigiCert Global Root CA” ausgegeben. Das wäre ja so, als ob ich mir selbst meinen Personalausweis ausstellen würde. Ich habe es nicht probiert, habe aber starke Zweifel an einer problemlosen Polizeikontrolle mit so einem “Ausweis”.
 
 ## Technisches Vertrauen
 Warum stellt sich DigiCert selbst ein Zertifikat aus? Naja, irgendwo muss der Baum ja anfangen. Über der Wurzel ist halt nichts mehr, was das Zertifikat ausgeben könnte. Klingt aber trotzdem nicht sehr vertrauenswürdig. Rein technisch ist das auch nur vertrauenswürdig, weil das Root CA Zertifikat so eingestuft wurde. Nämlich an zwei Stellen. Einmal in Windows und einmal im Browser.
 
-![browsertrust](browsertrust.png)
+![browsertrust](/assets/images/2023-11-21/browsertrust.png)
 
 Neben vielen anderen Zertifikaten findet sich in Windows auch das DigiCert Root CA Zertifikat wieder.
 
@@ -63,11 +63,11 @@ Dazu kann man Zertifikate auch zurückziehen. Man meldet das also der Zertifizie
 
 Wie komme ich aber an diese Liste? Ganz einfach, der Link zu der Liste steht im Zertifikat.
 
-![crllink](crllink.png)
+![crllink](/assets/images/2023-11-21/crllink.png)
 
 Und so sieht die Liste dann aus.
 
-![crl](crl.png)
+![crl](/assets/images/2023-11-21/crl.png)
 
 Besonders lang ist die Liste ja nicht, nur 3 Zertifikate. Stichprobenartig habe ich mir mal die Sperrlisten anderer großer Zertifizierungsstellen angeschaut. Alle sind nicht besonders umfangreich, enthalten teilweise kein einziges gesperrtes Zertifikat. Ich kann mir wirklich nicht vorstellen, dass es nur so wenige Fälle gibt, bei denen private Schlüssel kompromittiert wurden. Ich gehe von einer großen Meldelücke aus.
 
