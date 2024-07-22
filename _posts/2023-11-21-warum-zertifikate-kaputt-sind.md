@@ -132,7 +132,8 @@ Dazu kann man Zertifikate auch zurückziehen. Man meldet das also der
 Zertifizierungsstelle, die dieses Zertifikat auf eine Liste mit gesperrten
 Zertifikaten setzt.
 
-Wie komme ich aber an diese Liste? Ganz einfach, der Link zu der Liste steht im Zertifikat.
+Wie komme ich aber an diese Liste? Ganz einfach, der Link zu der Liste steht im
+Zertifikat.
 
 ![crllink](/assets/images/2023-11-21/crllink.png)
 
