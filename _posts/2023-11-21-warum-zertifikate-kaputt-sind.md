@@ -6,6 +6,7 @@ categories: IT-security
 ---
 
 # Einführung
+
 <div style="text-align: justify">
 Zuerst eine kurze Erklärung für alle, die nicht so technisch unterwegs sind.
 Fast jeder nutzt täglich Zertifikate. Auch wenn die allermeisten sich dessen
@@ -17,15 +18,18 @@ Wide Web werden Zertifikate häufig eingesetzt.
 
 ## Vorteile von Zertifikaten
 
+<div style="text-align: justify">
 Ich als Benutzer solcher mit TLS abgesicherten Seiten habe einige Vorteile.
 Der Datenkanal zwischen mir und dem Server auf dem die Seite liegt ist
 verschlüsselt. Es kann also niemand Drittes die Daten lesen. (Zumindest so
 lange der private Schlüssel des Seitenanbieters geheim bleibt). Außerdem kann
 ich sicher sein, dass ich auch wirklich mit Google kommuniziere und nicht mit
 jemanden der das nur vorgibt.
+</div>
 
 ## Beispiel
 
+<div style="text-align: justify">
 Wie wird das gelöst? Na logisch, mit Zertifikaten.
 Hier mal ein Ausschnitt des LinkedIn Zertifikats.
 
@@ -45,9 +49,11 @@ vertrauenswürdig? Warum wird dieser bei einer Polizeikontrolle akzeptiert? Da e
 von einer vertrauenswürdigen Stelle ausgegeben wurde, der Personalausweisbehörde
 des Hauptwohnsitzes. Gedruckt wird er dann von der Bundesdruckerei, welche
 ebenfalls als vertrauenswürdig angesehen wird.
+</div>
 
 ## Herausgeber
 
+<div style="text-align: justify">
 Auch bei Zertifikaten gibt es einen Herausgeber, er ist ja oben im Screenshot
 schon aufgelistet (DigiCert). Es gibt sogar eine genaue Aufschlüsselung.
 
@@ -65,9 +71,11 @@ Laufzeit fällt vor allem eines auf. Das Zertifikat wurde von
 so, als ob ich mir selbst meinen Personalausweis ausstellen würde. Ich habe es
 nicht probiert, habe aber starke Zweifel an einer problemlosen Polizeikontrolle
 mit so einem “Ausweis”.
+</div>
 
 ## Technisches Vertrauen
 
+<div style="text-align: justify">
 Warum stellt sich DigiCert selbst ein Zertifikat aus? Naja, irgendwo muss der
 Baum ja anfangen. Über der Wurzel ist halt nichts mehr, was das Zertifikat
 ausgeben könnte. Klingt aber trotzdem nicht sehr vertrauenswürdig. Rein
@@ -95,9 +103,11 @@ vertrauen Google Chrome und Windows diesen ebenso.
 So eine Root CA ist also extrem sensibel. Wird der private Schlüssel
 kompromittiert, müssen unter Umständen hunderttausende Zertifikate als
 ungültig eingestuft werden. Mehr dazu später.
+</div>
 
 ## Organisatorisches Vertrauen
 
+<div style="text-align: justify">
 Neben dem technischen Vertrauen muss man dem Herausgeber eines Zertifikats auch
 organisatorisch vertrauen. Es würde ja nichts bringen, wenn sich einfach jeder
 ein Zertifikat für www.linkedin.com holen könnte um damit eine Phishing-Seite zu
@@ -106,9 +116,11 @@ Zertifikat besteht. Das kann man technisch lösen, zum Beispiel indem man einen
 bestimmten TXT Eintrag in den DNS Einstellungen von linkedin.com machen muss.
 Damit habe ich nachgewiesen, dass mir die Domain linkedin.com gehört, ich bin
 also anspruchsberechtigt.
+</div>
 
 ## Der Fall Symantec
 
+<div style="text-align: justify">
 Symantec hat auch lange eine eigene Zertifizierungsstelle betrieben. Diese war
 auch allgemein als vertrauenswürdig eingestuft. Irgendwann gab es aber
 Auffälligkeiten. So wurden Zertifikate ausgegeben, ohne dass die Antragsteller
@@ -119,9 +131,11 @@ alle Zertifikate von Symantec ungültig. Also alles toll, das System
 funktioniert? Nicht wirklich. Denn es hat lange gedauert, bis das wirklich
 umgesetzt wurde. Zu viele populäre Webseiten nutzten noch Zertifikate von
 Symantec und man wollte die Benutzer nicht verunsichern.
+</div>
 
 ## Zurückgezogene Zertifikate
 
+<div style="text-align: justify">
 Es gibt aber auch kleinere, alltäglich Fälle, bei denen Zertifikate
 zurückgezogen werden müssen. Stellen wir uns einfach einen Webserver vor, auf
 der der private Schlüssel des Zertifikats liegt. Dieser ist von Crackern
@@ -148,9 +162,11 @@ Alle sind nicht besonders umfangreich, enthalten teilweise kein einziges
 gesperrtes Zertifikat. Ich kann mir wirklich nicht vorstellen, dass es nur so
 wenige Fälle gibt, bei denen private Schlüssel kompromittiert wurden.
 Ich gehe von einer großen Meldelücke aus.
+</div>
 
 ## Das Problem mit Zertifikaten
 
+<div style="text-align: justify">
 Die gesamte Zertifikatsinfrastruktur ist dezentral aufgebaut. Theoretisch kann
 jeder seine eigene Root CA aufbauen. Das wird auch gemacht, zum Beispiel um
 innerhalb des Unternehmens Zertifikate verteilen zu können. Natürlich sind diese
@@ -168,9 +184,11 @@ werden konnte. Aber genau das passiert nicht. Die Browserhersteller möchten
 nicht zu viele Fehlalarme produzieren. Ich finde das verständlich, denn wenn man
 andauernd gewarnt wird, ignoriert man das nur noch. Damit würde auch eine
 berechtigte Warnung wahrscheinlich ignoriert werden.
+</div>
 
 ## Die “Lösung”
 
+<div style="text-align: justify">
 Obwohl das System der Zertifikatssperrungen gut durchdacht ist und in der
 Theorie funktioniert, wird es in der Praxis nicht angewandt. Damit wird
 praktisch nicht überprüft, ob ein Zertifikat überhaupt noch gültig ist.
@@ -183,9 +201,11 @@ eingestuft. Es darf also praktisch nur noch Zertifikate geben, die maximal 12
 Monate Gültigkeit haben. Toll, so wird nur ein Jahr lang nicht geprüft, ob das
 Zertifikat vielleicht zurückgezogen wurde. Das erhöht das Vertrauen in die
 sichere Datenkommunikation durch Zertifikate bei mir wirklich. Wie geht es euch?
+</div>
 
 ## Alternativen
 
+<div style="text-align: justify">
 Obwohl Zertifikate ernste Probleme haben, sind sie extrem verbreitet. Es gibt
 zwar erste Ansätze wie DNSSEC, aber es wird wohl noch Jahre oder sogar Jahrzente
 brauchen, bis Zertifikate in der jetzigen Form nicht mehr verwendet werden.
@@ -194,10 +214,13 @@ In anderen Bereichen würde ich auch heute schon keine Zertifikate verwenden,
 nämlich wenn es um Email- und Datenverschlüsselung in Microsoft 365 geht.
 Dort gibt es bessere Alternativen nämlich Microsoft Purview Message Encryption
 und Sensitivity Labels.
+</div>
 
 ## Abschluss
 
+<div style="text-align: justify">
 In der Theorie sind Zertifikate toll. Sie haben auch immer noch ihre
 Daseinsberechtigung. Vieles geht auch gar nicht ohne Zertifikate. Man sollte
 sich nur der oben beschriebenen Einschränkungen bewusst sein und evtl. prüfen,
 ob es für einen Anwendungsfall bessere Alternativen gibt.
+</div>
