@@ -6,7 +6,7 @@ categories: IT-security
 ---
 
 # Einführung
-<div style="text-align: right">
+<div style="text-align: justify">
 Zuerst eine kurze Erklärung für alle, die nicht so technisch unterwegs sind.
 Fast jeder nutzt täglich Zertifikate. Auch wenn die allermeisten sich dessen
 gar nicht bewusst sind. Aber zum Beispiel jeder Aufruf der Google Internetseite ist
