@@ -9,7 +9,7 @@ categories: IT-security
 
 Zuerst eine kurze Erklärung für alle, die nicht so technisch unterwegs sind.
 Fast jeder nutzt täglich Zertifikate. Auch wenn die allermeisten sich dessen
-gar nicht bewusst sind. Aber jeder Aufruf der Google Internetseite ist
+gar nicht bewusst sind. Aber zum Beispiel jeder Aufruf der Google Internetseite ist
 mittlerweile per TLS verschlüsselt, erkennbar am "https" in der Adresszeile.
 Das gilt heutzutage für fast alle Internetseiten. Aber auch außerhalb des World
 Wide Web werden Zertifikate häufig eingesetzt.
@@ -82,7 +82,7 @@ das DigiCert Root CA Zertifikat wieder.
 Auch im Google Chrome gibt es eine Liste mit als vertrauenswürdig
 eingestuften Root CA Zertifikaten.
 
-<https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7Jtb4NxCSaEtCaisz2u3NQZcHejDUjI3Q-utBnL-C5E7w4crv6QZ9GRDb2bFGbLgUQsgQyF0Y8eoN/pubhtml>
+[Google-Liste](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7Jtb4NxCSaEtCaisz2u3NQZcHejDUjI3Q-utBnL-C5E7w4crv6QZ9GRDb2bFGbLgUQsgQyF0Y8eoN/pubhtml)
 
 Auch dort findet sich unsere DigiCert Global Root CA wieder.
 
@@ -99,7 +99,7 @@ ungültig eingestuft werden. Mehr dazu später.
 
 Neben dem technischen Vertrauen muss man dem Herausgeber eines Zertifikats auch
 organisatorisch vertrauen. Es würde ja nichts bringen, wenn sich einfach jeder
-ein Zertifikat für www.linkedin.com holen könnte um damit eine Phishing Seite zu
+ein Zertifikat für www.linkedin.com holen könnte um damit eine Phishing-Seite zu
 betreiben. Der Anbieter muss also kontrollieren, dass ein Anspruch auf so ein
 Zertifikat besteht. Das kann man technisch lösen, zum Beispiel indem man einen
 bestimmten TXT Eintrag in den DNS Einstellungen von linkedin.com machen muss.
@@ -164,7 +164,7 @@ So gibt es Statistiken, dass bis zu 10% aller Zertifikatssperrlisten nicht
 abrufbar sind. Das müsste dann eigentlich dazu führen, dass der Browser eine
 Warnmeldung ausgibt und darauf hinweist, dass das Zertifikat nicht überprüft
 werden konnte. Aber genau das passiert nicht. Die Browserhersteller möchten
-nicht zu viele Fehlalarme produzieren, Ich finde das verständlich, denn wenn man
+nicht zu viele Fehlalarme produzieren. Ich finde das verständlich, denn wenn man
 andauernd gewarnt wird, ignoriert man das nur noch. Damit würde auch eine
 berechtigte Warnung wahrscheinlich ignoriert werden.
 
