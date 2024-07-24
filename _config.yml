@@ -17,7 +17,7 @@ title: Blog von Christian Hemker
 email: blog@hemker.de
 description: >- # this means to ignore newlines until "baseurl:"
   Blogging über gadgets und IT
-#baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://hemker.de" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: Purple-Tentacle
