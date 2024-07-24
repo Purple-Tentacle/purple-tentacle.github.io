@@ -6,13 +6,14 @@ categories: IT-security
 ---
 
 # Einführung
-
+<div style="text-align: right">
 Zuerst eine kurze Erklärung für alle, die nicht so technisch unterwegs sind.
 Fast jeder nutzt täglich Zertifikate. Auch wenn die allermeisten sich dessen
 gar nicht bewusst sind. Aber zum Beispiel jeder Aufruf der Google Internetseite ist
 mittlerweile per TLS verschlüsselt, erkennbar am "https" in der Adresszeile.
 Das gilt heutzutage für fast alle Internetseiten. Aber auch außerhalb des World
 Wide Web werden Zertifikate häufig eingesetzt.
+</div>
 
 ## Vorteile von Zertifikaten
 
