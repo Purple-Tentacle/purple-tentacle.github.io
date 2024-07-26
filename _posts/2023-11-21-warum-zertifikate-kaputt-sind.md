@@ -9,8 +9,8 @@ categories: IT-security
 
 Zuerst eine kurze Erklärung für alle, die nicht so technisch unterwegs sind.
 Fast jeder nutzt täglich Zertifikate. Auch wenn die allermeisten sich dessen
-gar nicht bewusst sind. Aber zum Beispiel jeder Aufruf der Google Internetseite ist
-mittlerweile per TLS verschlüsselt, erkennbar am "https" in der Adresszeile.
+gar nicht bewusst sind. Aber zum Beispiel jeder Aufruf der Google Internetseite
+ist mittlerweile per TLS verschlüsselt, erkennbar am "https" in der Adresszeile.
 Das gilt heutzutage für fast alle Internetseiten. Aber auch außerhalb des World
 Wide Web werden Zertifikate häufig eingesetzt.
 
@@ -82,7 +82,10 @@ das DigiCert Root CA Zertifikat wieder.
 Auch im Google Chrome gibt es eine Liste mit als vertrauenswürdig
 eingestuften Root CA Zertifikaten.
 
-[Google-Liste](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7Jtb4NxCSaEtCaisz2u3NQZcHejDUjI3Q-utBnL-C5E7w4crv6QZ9GRDb2bFGbLgUQsgQyF0Y8eoN/pubhtml)
+[Google-Liste](
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7Jtb4NxCSaEtCaisz2u3NQZcHejD
+UjI3Q-utBnL-C5E7w4crv6QZ9GRDb2bFGbLgUQsgQyF0Y8eoN/pubhtml
+)
 
 Auch dort findet sich unsere DigiCert Global Root CA wieder.
 
