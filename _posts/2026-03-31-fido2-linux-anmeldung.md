@@ -79,13 +79,13 @@ Jetzt kann man testen, ob alles funktioniert. `sudo` sollte nach der Yubikey-PIN
 sudo ls -la
 ```
 
-![image-20260331121127393](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121127393.png)
+![image-20260331121127393](/assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121127393.png)
 
 Als nächstes testen wir die Benutzeranmeldung.
 
 ![image-20260331121241453](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121241453.png)
 
-![image-20260331121259635](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121259635.png)
+![image-20260331121259635](/assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121259635.png)
 
 Wenn beide sticks funktionieren, dann können wir jetzt die passwortbasierte Anmeldung deaktivieren.
 
@@ -97,7 +97,7 @@ Hierfür müssen wir nur eine weitere Zeile zur `/etc/pam.d/common-auth` hinzuf�
 # Unsere Zeile von vorher
 auth [success=done default=ignore] pam_u2f.so authfile=/home/chris/.config/Yubico/u2f_keys cue pinverification=1
 
-# Neue Passwort deaktivieren
+# Neue Zeile, Passwort deaktivieren
 auth mandatory pam_deny.so
 
 # Standardzeilen
@@ -114,3 +114,7 @@ Endlich passwortlose und sichere Authentifizierung unter Linux. Bequem und trotz
 Je nach Sicherheitsbedürfniss könnte man einen Yubikey nano sogar dauerhaft stecken lassen. Das ist dank PIN immer noch ein sehr guter Schutz vor lokalen Angriffen. Vor entfernten Angriffen ja sowieso, da der stick ja berührt werden muss.
 
 Als nächstes richten wir die Festplattenentschlüsselung mit Yubikey ein.
+
+
+
+![image-20260331175209379](/assets/2026-03-31-fido2-linux-anmeldung/image-20260331175209379.png)
