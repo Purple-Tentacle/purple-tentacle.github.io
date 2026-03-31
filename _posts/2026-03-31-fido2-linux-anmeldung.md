@@ -20,7 +20,7 @@ Um sich mit dem Yubikey anmelden zu können, bedarf es mehrerer Schritte.
 4. Testen der Anmeldung mit **beiden** Sticks
 5. Passwortanmeldung deaktivieren
 
-> <span style="color: #3171FC; font-weight: bold;">&#2139; Info</span>
+> <span style="color: #3171FC; font-weight: bold;">&#9432; Info</span>
 >
 > Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten, falls mal einer verloren oder kaputt geht. Einen davon sollte man räumlich getrennt und sicher aufbewahren.
 {: .alert}
