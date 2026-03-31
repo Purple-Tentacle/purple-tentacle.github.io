@@ -156,16 +156,27 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
-/* Simple CSS to catch the blockquote alert */
+/* Hacker-Theme Compatible Blockquotes */
 blockquote {
-  padding: 10px 15px;
-  border-left: 5px solid #d1d5da;
-  background-color: #f6f8fa;
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  /* Use your theme's variables for a consistent look */
+  border-left: 5px solid $blockquote-border; 
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark overlay */
+  color: $blockquote-color;
 }
 
-/* To target the specific 'Important' look */
+/* Target GitHub-style Alerts */
+/* We check for [!IMPORTANT] text inside the first paragraph */
+blockquote:has(p:first-child:contains("[!IMPORTANT]")),
 blockquote:has(strong:first-child:contains("IMPORTANT")) {
-  border-left-color: #8250df; /* Purple for Important */
+  border-left-color: #8957e5; /* GitHub Purple */
+  background-color: rgba(137, 87, 229, 0.1); /* Subtle Purple tint */
+}
+
+/* Hide the raw [!IMPORTANT] text so it looks like a clean alert */
+blockquote p:first-child {
+  text-transform: capitalize;
 }
 
 pre {
