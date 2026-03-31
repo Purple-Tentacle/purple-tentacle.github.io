@@ -23,7 +23,7 @@ Um sich mit dem Yubikey anmelden zu können, bedarf es mehrerer Schritte.
 > **Info**
 >
 > Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten, falls mal einer verloren oder kaputt geht. Einen davon sollte man räumlich getrennt und sicher aufbewahren.
-{: .important-alert}
+{: .alert}
 
 ## Installation
 
@@ -40,6 +40,7 @@ Nach dem Absetzen der Befehle fängt der Yubikey an zu blinken, dann muss man di
 > **Wichtig**
 >
 > Man beachte die `>>` beim zweiten Befehl. Wir wollen ja den zweiten stick anhängen und nicht den ersten überschreiben.
+{: .alert}
 
 ```bash
 # first FIDO2-stick
@@ -75,6 +76,7 @@ Jetzt kann man testen, ob alles funktioniert. `sudo` sollte nach der Yubikey-PIN
 > **Wichtig**
 >
 > Unbedingt beide sticks testen.
+{: .alert}
 
 ```bash
 sudo ls -la
