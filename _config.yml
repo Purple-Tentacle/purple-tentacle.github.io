@@ -22,9 +22,7 @@ url: "https://hemker.de" # the base hostname & protocol for your site, e.g. http
 #twitter_username: jekyllrb
 github_username: Purple-Tentacle
 
-header_pages:
-  - about.md
-  - contact.md  # If you have one
+show_downloads: [true]
 
 # Build settings
 markdown: kramdown
