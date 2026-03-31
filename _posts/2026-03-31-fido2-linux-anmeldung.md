@@ -114,7 +114,3 @@ Endlich passwortlose und sichere Authentifizierung unter Linux. Bequem und trotz
 Je nach Sicherheitsbedürfniss könnte man einen Yubikey nano sogar dauerhaft stecken lassen. Das ist dank PIN immer noch ein sehr guter Schutz vor lokalen Angriffen. Vor entfernten Angriffen ja sowieso, da der stick ja berührt werden muss.
 
 Als nächstes richten wir die Festplattenentschlüsselung mit Yubikey ein.
-
-
-
-![image-20260331175209379](/assets/2026-03-31-fido2-linux-anmeldung/image-20260331175209379.png)
