@@ -83,7 +83,7 @@ sudo ls -la
 
 Als nächstes testen wir die Benutzeranmeldung.
 
-![image-20260331121241453](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121241453.png)
+![image-20260331121241453](/assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121241453.png)
 
 ![image-20260331121259635](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121259635.png)
 
