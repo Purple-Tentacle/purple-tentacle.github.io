@@ -79,7 +79,7 @@ Jetzt kann man testen, ob alles funktioniert. `sudo` sollte nach der Yubikey-PIN
 sudo ls -la
 ```
 
-![image-20260331121127393](../assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121127393.png)
+![image-20260331121127393](/assets/images/2026-03-31-fido2-linux-anmeldung/image-20260331121127393.png)
 
 Als nächstes testen wir die Benutzeranmeldung.
 
