@@ -24,6 +24,9 @@ github_username: Purple-Tentacle
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 #theme: 
 remote_theme: pages-themes/hacker@v0.2.0
