@@ -20,7 +20,7 @@ Um sich mit dem Yubikey anmelden zu können, bedarf es mehrerer Schritte.
 4. Testen der Anmeldung mit **beiden** Sticks
 5. Passwortanmeldung deaktivieren
 
-> span style="color: #3171FC; font-weight: bold;">Info</span>
+> <span style="color: #3171FC; font-weight: bold;">&#2139; Info</span>
 >
 > Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten, falls mal einer verloren oder kaputt geht. Einen davon sollte man räumlich getrennt und sicher aufbewahren.
 {: .alert}
@@ -37,7 +37,7 @@ mkdir -p ~/.config/Yubico
 
 Nach dem Absetzen der Befehle fängt der Yubikey an zu blinken, dann muss man diesen berühren.
 
-> <span style="color: #EC253F; font-weight: bold;">Wichtig</span>
+> <span style="color: #EC253F; font-weight: bold;">&#10071; Wichtig</span>
 >
 > Man beachte die `>>` beim zweiten Befehl. Wir wollen ja den zweiten stick anhängen und nicht den ersten überschreiben.
 {: .alert}
@@ -73,7 +73,7 @@ auth   [success=1 default=ignore]      pam_sss.so use_first_pass
 
 Jetzt kann man testen, ob alles funktioniert. `sudo` sollte nach der Yubikey-PIN fragen. Nach dem Absetzen der Befehle fängt der Yubikey an zu blinken, dann muss man diesen berühren. Nach dem berühren des Sticks sollte man angemeldet werden.
 
-> <span style="color: #EC253F; font-weight: bold;">Wichtig</span>
+> <span style="color: #EC253F; font-weight: bold;">&#10071; Wichtig</span>
 >
 > Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten.
 {: .alert}
