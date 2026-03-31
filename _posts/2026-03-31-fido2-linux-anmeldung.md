@@ -23,6 +23,7 @@ Um sich mit dem Yubikey anmelden zu können, bedarf es mehrerer Schritte.
 > **Info**
 >
 > Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten, falls mal einer verloren oder kaputt geht. Einen davon sollte man räumlich getrennt und sicher aufbewahren.
+{: .important-alert}
 
 ## Installation
 
