@@ -156,29 +156,6 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
-/* Hacker-Theme Compatible Blockquotes */
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  /* Use your theme's variables for a consistent look */
-  border-left: 5px solid $blockquote-border; 
-  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark overlay */
-  color: $blockquote-color;
-}
-
-/* Target GitHub-style Alerts */
-/* We check for [!IMPORTANT] text inside the first paragraph */
-blockquote:has(p:first-child:contains("[!IMPORTANT]")),
-blockquote:has(strong:first-child:contains("IMPORTANT")) {
-  border-left-color: #8957e5; /* GitHub Purple */
-  background-color: rgba(137, 87, 229, 0.1); /* Subtle Purple tint */
-}
-
-/* Hide the raw [!IMPORTANT] text so it looks like a clean alert */
-blockquote p:first-child {
-  text-transform: capitalize;
-}
-
 pre {
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
