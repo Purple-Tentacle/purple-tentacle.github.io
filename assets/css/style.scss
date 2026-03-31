@@ -156,10 +156,16 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
+/* Simple CSS to catch the blockquote alert */
 blockquote {
-  color: $blockquote-color;
-  padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  padding: 10px 15px;
+  border-left: 5px solid #d1d5da;
+  background-color: #f6f8fa;
+}
+
+/* To target the specific 'Important' look */
+blockquote:has(strong:first-child:contains("IMPORTANT")) {
+  border-left-color: #8250df; /* Purple for Important */
 }
 
 pre {
