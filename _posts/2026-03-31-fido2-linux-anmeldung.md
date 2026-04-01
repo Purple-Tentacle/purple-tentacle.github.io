@@ -75,11 +75,9 @@ Jetzt kann man testen, ob alles funktioniert. `sudo` sollte nach der Yubikey-PIN
 
 > <span style="color: #EC253F; font-weight: bold;">&#10071; Wichtig</span>
 >
-> Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten.
+> Ich rede hier immer von sticks, also Plural. Es ist wichtig mindestens 2 sticks einzurichten. Unbedingt beide sticks testen.
 {: .alert}
->
-> Unbedingt beide sticks testen.
-{: .alert}
+
 
 ```bash
 sudo ls -la
