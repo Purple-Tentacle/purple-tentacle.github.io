@@ -19,7 +19,7 @@ Damit die Umschaltung auf den Tablet-Modus funktioniert (also die Tastatur abges
 
 Diese sind bei aktuellen Ubuntu-Versionen enthalten. Bei meiner Installation von Ubuntu hat es am Anfang ja auch funktioniert.
 
-# Problemsuche 
+# Problemsuche
 
 Bei mir hat der Kernel den zuständigen GPIO für die Umschaltung nicht erkannt. Der folgende Befehl lieferte nichts zurück.
 
